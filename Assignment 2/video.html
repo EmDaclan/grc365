@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fixed-Width Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } @font-face {
+        font-family: 'Roboto';
+        src: url(Georgia.ttf);
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: 1325px;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+    } #banner {
+        width: 100%;
+		height: 250px;
+		float: none;
+		border: none;
+		drop-shadow: none;
+	padding-top: none;
+	margin-top: 0; 
+    } h1 {
+        font: 48pt/1.4em 'Audiowide', cursive;
+        text-align: center;
+        margin: 54px 0 0 0;
+        color: black;
+        text-shadow: 2px 3px 6px lightblue;
+    } p {
+        font: 14pt/1.4em 'Roboto';
+        width: 768px;
+        margin: 24px auto;
+    } .float-left {
+        width: 400px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } ul {
+        width: 100%;
+        margin-top: -4px;
+    } li {
+        font: 14pt/2.0em 'Roboto';
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: rgba(169,225,245,0.80);
+    } a li {
+        color: black;
+    } a {
+        text-decoration: none;
+    } li:hover, a li:hover {
+        background: rgba(169,225,245,0.50);
+    } #arrow {
+        width: 75px;
+        height: 75px;
+        margin: 76px 0 0 24px;
+        display: block;
+    }
+	video { 
+		margin:72px auto;
+		display: block;
+		box-shadow: 2px 3px 6px dimgray;
+		
+	}
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <img id="banner" src="banner.jpg" />
+        <ul>
+            <a href="index.html"> <li>Home</li> </a>
+            <li>Learn More</li>
+        </ul>
+
+        <h1>Learn More About Us</h1>
+        <p><img class="float-left" src="computer.jpg" />
+            Our goal here is to educate the public, prevent people from falling victim, and honor those who dedicate their lives to stopping online fraud. If you are interested in that, then you are in the right place! Watch a quick introduction video to learn more or click on the link below!</p>
+		<a href="https://reportfraud.ftc.gov/"> Federal Trade Commision Website </a>
+		<video width="640" height="360" controls poster="poster.jpg"> <source src="video2.mp4"> </video>
+    </div>
+</body>
+</html>
