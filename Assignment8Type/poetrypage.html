@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Poetry Showcase</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    * {margin: 0; padding: 0;}
+     #page {
+        width: 928px;
+        height: 1100px;
+        background: white;
+        margin: 24px auto;
+        display: grid;
+		border: 2px solid black;
+		grid-template: 250px 1fr 200px / 1fr 2fr;
+    } header {
+        height: 150px;
+		background-Color: black;
+		grid-area: 1/1/2/3;
+	} sidebar {
+		
+	}
+	main {
+		margin: 0px 50px;
+    } footer {
+       background-image: url("pattern.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		grid-area: 3/1/4/3;
+    } #caption {
+        font: 300 italic 10pt/1.4em 'Exo 2';
+        margin: 6px;
+	} #title {
+		font: 35pt/1.4em 'Bona Nova SC Static';
+	}
+	h1 {
+        font: 600 72pt/1.4em 'Bona Nova SC Static';
+        text-align: center;
+		color: White;
+    }#body {
+        font: 18pt/1.4em 'Exo 2';
+		width: 450px;
+		margin: 10px auto;
+		color:Black;
+		grid-area: 3/1/4/2;
+		text-align: left;
+    } #body2 {
+        font: 18pt/1.4em 'Exo 2';
+		width: 450px;
+		margin: 10px auto;
+		color:Black;
+		grid-area: 3/1/4/2;
+		text-align: left;
+    }img {
+        width: 350px;
+		justify-content: left;
+		margin-top: 50px;
+	} #end {
+		 font: 10pt/1.4em 'Exo 2';
+		width: 450px;
+		margin: 40px auto;
+		color:black;
+		grid-area: 3/1/4/2;
+		text-align: left;
+	}
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+		<h1> Poetry showcase </h1>
+		</header>
+        <main>
+		<p id="title"> Feast of the Fifth Year </p>
+			<p id="caption">Poetry by Chatgpt</p>
+			<p id="body">
+				Beneath the glow of candle’s gleam, they dine,
+				Five years entwined, like ivy’s climb and twine.
+				A silver stag upon their plates did rest,
+				With wine as red as vows once sworn in jest.
+			</p>
+			<p id="body2">
+				She smiled, “Though time may wrinkle silk and skin,”
+				He laughed, “The fire still crackles deep within.”
+				And so they feasted, love their richest fare,
+				While night slipped past on quiet, velvet air.
+			</p>
+			<p id="end">Images and patterns provided by FreePik.</p>
+		</main>
+		<sidebar>
+			<img src="couple.jpg" />
+		</sidebar>
+        <footer>
+		</footer>
+    </div>
+</body>
+</html>
