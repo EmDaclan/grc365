@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Forum</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+<style>
+	h1 {
+        text-align: center;
+		justify-content: center;
+        font-weight: 700px;
+    } form {
+        width: 1024px;
+		max-width: 70%;
+        min-height: 600px;
+        padding: 24px;
+        background: #a0d6a5;
+        margin: 36px auto;
+        border: 1px solid #2b6730;
+        box-shadow: 2px 3px 6px #2b6730;
+        border-radius: 18px;
+        font: 18pt/1.2em "Poiret One";
+		font-weight: 600;
+    } fieldset {
+        margin-top: 18px;
+		font: 14pt/1.2em "Poiret One";
+		font-weight: 600;
+    } #personal input, #submit {
+        width: 100%;
+        height: 24px;
+        margin-bottom: 12px;
+		font: 14pt/1.2em "Poiret One";
+		font-weight: 600;
+    }
+	#submit {
+		background: #d9efdb;
+		font: 12pt "Poiret One";
+		font-weight: 600;
+	} p {
+		font: 12pt "Poiret One";
+		font-weight: 600;
+		text-align: center;
+	} #banner {
+		height: 300px;
+		width: 100%;
+		justify-content: center;
+		margin: 0px;
+		padding: 0px;
+	} @media only screen and (max-width: 750px) { 
+		p {
+			color: black;
+			font: 18pt/1.6em "Poiret One";
+			font-weight: 600;
+		}
+		#banner {
+		height: 200px;
+		width: 100%;
+		justify-content: center;
+		margin: 0px;
+			padding: 0px;}
+		fieldset {
+        margin-top: 16px;
+		font: 16pt/1.6em "Poiret One";
+		color: black;
+		font-weight: 650;}
+	}
+</style>
+</head>
+
+<body>
+        <div class="thumbnail-container"> </div>
+        <img id="banner" src="banner.jpg"/>
+</body>
+	
+<form action="https://formsubmit.co/emilydaclan@gmail.com" method="post">
+    <h1>Contact Us</h1>
+		
+		<label> First Name </label><br/>
+		<input type="text" id="fname" value="Firstname" /><br/>
+		<label> Last Name </label><br/>
+		<input type="text" id="lname" value="Lastname" /><br/>
+	<label> Phone Number </label><br/>
+		<input type="text" id="phone" value="Phone" /><br/>
+	<label> Email </label><br/>
+		<input type="text" id="email" value="Email" /><br/>
+		
+		<fieldset> 
+		<legend> Reason for contacting us today (check only one)</legend>
+		<input type="radio" name="Services" id="garden" value="garden"/>
+		<label for="garden"> Gardening Services</label><br/>
+		
+		<input type="radio" name="Services" id="Consult" value="consult"/>
+		<label for="Consult"> Landscaping</label><br/>
+		
+		<input type="radio" name="Services" id="plant" value="plant" />
+		<label for="plant"> Plant Index</label><br/>
+			
+		<input type="radio" name="question" id="question" value="question" />
+		<label for="question"> General Question</label><br/>
+		</fieldset>
+		
+		<fieldset>
+		<legend> What's your prefered method of contact (check all that apply)?</legend>
+			
+		<input type="checkbox" name="os" id="macos" value="Macos" />
+		<label for="macos"> Email</label>
+		
+		<input type="checkbox" name="windows" id="windows" value="Windows" />
+		<label for="windows"> Mobile Number</label>
+			
+		<input type="checkbox" name="unix" id="unix" value="Unix" />
+		<label for="unix"> Home Phone</label>
+		</fieldset>
+		
+		<fieldset> 
+		<legend> What is your prefered timeframe? </legend>
+			<select multiple> 
+				<option value="time"> ASAP </option>
+				<option value="year"> This week </option>
+				<option value="year"> This Month </option>
+				<option value="year"> This Quarter </option>
+			</select>
+		</fieldset>
+		
+<p> Thank you for filling out our form! We will respond as soon as possible :) </p>
+		<input id="submit" type="submit" value="Submit" />
+    </form>
+		<p> The banner pattern comes from Freepik. </p>
+</html>
