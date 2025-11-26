@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.typekit.net/oxj2zph.css">
+	<link rel="stylesheet" href="https://use.typekit.net/oxj2zph.css">
+	
+	</head>
+<body>
+
+<!-- Menu Bar -->
+    <div id="page-container">
+        <aside id="menu-bar">
+            <h1>Emily Daclan</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                   	<p class="section-title">Art Pieces:</p>
+					<li><a href="digital.html">Digital</a></li>
+                    <li><a href="physical.html">Physical</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+<!-- Page Stuff -->
+        <main id="content">
+            <h2>Contact</h2>
+			
+			<form action="https://formsubmit.co/emilydaclan@gmail.com" method="post">
+    <h1>Fill Out The Following</h1>
+		
+		<label> First Name </label><br/>
+		<input type="text" id="fname" value="Firstname" /><br/>
+		<label> Last Name </label><br/>
+		<input type="text" id="lname" value="Lastname" /><br/>
+	<label> Phone Number </label><br/>
+		<input type="text" id="phone" value="Phone" /><br/>
+	<label> Email </label><br/>
+		<input type="text" id="email" value="Email" /><br/>
+		
+		<fieldset> 
+		<legend> Are you reaching out on behalf of... (check only one)?</legend>
+		
+		<input type="radio" name="who" id="me" value="me"/>
+		<label for="ind"> Myself</label><br/>
+			
+		<input type="radio" name="who" id="ind" value="ind"/>
+		<label for="me"> Individual</label><br/>
+		
+		<input type="radio" name="who" id="com" value="com"/>
+		<label for="com"> Company/Organization</label><br/>
+		
+		</fieldset>
+				
+		<fieldset> 
+		<legend> What is your reason for contacting (check only one)?</legend>
+		<input type="radio" name="Services" id="garden" value="garden"/>
+		<label for="garden"> Commission</label><br/>
+		
+		<input type="radio" name="Services" id="Consult" value="consult"/>
+		<label for="Consult"> Question</label><br/>
+		
+		<input type="radio" name="Services" id="plant" value="plant" />
+		<label for="plant"> Concern</label><br/>
+			
+		<input type="radio" name="Services" id="opp" value="opp" />
+		<label for="opp"> Volunteer Opportunity (Non-Profit only)</label><br/>
+		</fieldset>
+		
+		<fieldset>
+		<legend> What's your prefered method of contact (check all that apply)?</legend>
+			
+		<input type="checkbox" name="os" id="macos" value="Macos" />
+		<label for="macos"> Email</label>
+		
+		<input type="checkbox" name="windows" id="windows" value="Windows" />
+		<label for="windows"> Mobile Number</label>
+			
+		<input type="checkbox" name="unix" id="unix" value="Unix" />
+		<label for="unix"> Home Phone</label>
+		</fieldset>
+		
+		<fieldset> 
+		<legend> What is your prefered timeframe for a response? </legend>
+			<select multiple> 
+				<option value="time"> ASAP </option>
+				<option value="year"> This week </option>
+				<option value="year"> This Month </option>
+				<option value="year"> This Quarter </option>
+			</select>
+		</fieldset>
+		
+<p> Thank you for filling out our form! I will respond as soon as possible :) </p>
+		<input id="submit" type="submit" value="Submit" />
+    </form>
+			
+        </main>
+    </div>
+    
+</body>
+</html>
